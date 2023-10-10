@@ -32,7 +32,6 @@ public class DiceGame {
                 System.out.println(Languages.getLanguage(language, diceRoll));
                 if (diceRoll == WEREWALL)
                     extra = true;
-                    scanner.nextLine();
                 if(!p1.addCash(diceRoll)) {
                     System.out.println(Languages.getLanguage(language, SCORE_TEXT) + p1.getCash());
                     p1.wins();
@@ -51,7 +50,6 @@ public class DiceGame {
                 System.out.println(Languages.getLanguage(language, diceRoll));
                 if (diceRoll == WEREWALL)
                     extra = true;
-                    scanner.nextLine();
                 if(!p2.addCash(diceRoll)) {
                     System.out.println(Languages.getLanguage(language, SCORE_TEXT) + p2.getCash());
                     p2.wins();
