@@ -20,11 +20,11 @@ public class Languages {
         if (index == TOWER)
             return "Plundering the dangerous tower can earn you 250 gold coins";
         else if (index == CRATER)
-            return "In pursuit of gold, you excavated a vast pit, only to watch 100 vanish, leaving you in utter despair";
+            return "In pursuit of gold, you excavated a vast crater, only to watch 100 vanish, leaving you in utter despair";
         else if (index == PALACE)
             return "You trade at the camp outside the palace gates and earn 100";
         else if (index == DESERT)
-            return"You have to resupply after journeying through the cold desert, lose 20";
+            return "You have to resupply after journeying through the cold desert, lose 20";
         else if (index == WALLED_CITY)
             return "The king of the walled city commends your chivalry, earn 180";
         else if (index == MONASTERY)
@@ -38,9 +38,9 @@ public class Languages {
         else if (index == PIT)
             return "Your horse breaks its leg in a pit, lose 50";
         else if (index == GOLDMINE)
-            return "In your journey of hardship you earn 650 gold coins!";
+            return "In your journey of hardship you reach the goldmine and earn 650 gold coins!";
         else if (index == NAME_TEXT)
-            return " choose which name people should remember you by ";
+            return " choose which name people should remember you by";
         else if (index == SCORE_TEXT)
             return ("Points thus far: ");
         else
@@ -57,7 +57,7 @@ public class Languages {
             }
         else if (index == CRATER)
             try {
-                return new String ("Sapi un crater gol căutând aur și pierzi 100".getBytes("ISO-8859-16"), "ISO-8859-1");
+                return new String ("În căutarea aurului ai excavat un crater vast, pierzând 100 și lăsându-te în disperare".getBytes("ISO-8859-16"), "ISO-8859-1");
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
                 return "ERROR: Index 3 not properly encoded";
@@ -120,7 +120,7 @@ public class Languages {
             }
         else if (index == GOLDMINE)
             try {
-                return new String ("Găsești aur în munți și câștigi 650!".getBytes("ISO-8859-16"), "ISO-8859-1");
+                return new String ("În drumeția ta crâncenă descoperi mina de aur și câștigi 650".getBytes("ISO-8859-16"), "ISO-8859-1");
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
                 return "ERROR: Index 12 not properly encoded";
@@ -172,7 +172,7 @@ public class Languages {
         else if (index == GOLDMINE)
             return "Apanare kastera yatraya apani 650 sonara kayena uparjana karena!";
         else if (index == NAME_TEXT)
-            return " loke apanake kona name smarana karabe ta cayana karuna ";
+            return " loke apanake kona name smarana karabe ta cayana karuna";
         else if (index == SCORE_TEXT)
             return ("Ekhana paryanta payenta: ");
         else
