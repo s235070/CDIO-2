@@ -188,7 +188,7 @@ public class Languages {
     public static int selectLanguage() {
         
         try {
-            System.out.println(new String ("EN: English | RO: Română BE: Bengali".getBytes("ISO-8859-16"), "ISO-8859-1"));
+            System.out.println(new String ("EN: English | RO: Română | BE: Bangla".getBytes("ISO-8859-16"), "ISO-8859-1"));
         } catch (UnsupportedEncodingException e) {
             System.out.println("ERROR: Language select not properly encoded");
             e.printStackTrace();
@@ -205,7 +205,7 @@ public class Languages {
             } else if (line.equalsIgnoreCase("RO") || line.equalsIgnoreCase("Română") || line.equalsIgnoreCase("Romanian") || line.equalsIgnoreCase("Romana")) {
                 language = 1;
                 break;
-            } else if (line.equalsIgnoreCase("BE") || line.equalsIgnoreCase("Bengali")) {
+            } else if (line.equalsIgnoreCase("BE") || line.equalsIgnoreCase("Bengali") || line.equalsIgnoreCase("Bangla") || line.equalsIgnoreCase("BA") || line.equalsIgnoreCase("BD") || line.equalsIgnoreCase("BN")) {
                 language = 2;
                 break;
             }
