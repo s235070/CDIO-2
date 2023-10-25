@@ -20,6 +20,12 @@ Abdullah H. {
   Report Assignment ("Introduction, Requirements/Analysis, Design & Conlusion");
 }
 
+Samin C. {
+  Role ("Developer, Reporter & Reader"),
+  Code Assignment ("Script writer"),
+  Report Assignment ("Introduction, Requirements/Analysis, Design & Conlusion");
+}
+
 Mustafa A. {
   Role ("Developer & Reporter"),
   Code Assignment ("Translation"),
