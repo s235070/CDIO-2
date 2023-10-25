@@ -20,7 +20,7 @@ public class Languages {
         if (index == TOWER)
             return "Plundering the dangerous tower can earn you 250 gold coins";
         else if (index == CRATER)
-            return "In pursuit of gold, you excavated a vast pit, only to watch 100 vanish, leaving you in utter despair"; 
+            return "In pursuit of gold, you excavated a vast pit, only to watch 100 vanish, leaving you in utter despair";
         else if (index == PALACE)
             return "You trade at the camp outside the palace gates and earn 100";
         else if (index == DESERT)
@@ -40,7 +40,7 @@ public class Languages {
         else if (index == GOLDMINE)
             return "In your journey of hardship you earn 650 gold coins!";
         else if (index == NAME_TEXT)
-            return "Choose which name people should remember you by ";
+            return " choose which name people should remember you by ";
         else if (index == SCORE_TEXT)
             return ("Points thus far: ");
         else
@@ -148,7 +148,38 @@ public class Languages {
             }
     };
 
-    static Language[] languages = new Language[] {english, romanian};
+    static Language bengali = index -> {
+        if (index == TOWER)
+            return "Bippajjanaka kothin tower ta tomake 250 gold coins dibe";
+        else if (index == CRATER)
+            return "gold ta pao ar joino tumi ekta bisal garta kanana kara kintu 100 gold coins loss apanake sampurna hatasara madhye rekhe yacchi ";
+        else if (index == PALACE)
+            return "apani prasadera getera baire sibire byabasa karena ebam 100 uparjana karena";
+        else if (index == DESERT)
+            return"Thanda marubhumira madya diye yatra karara pare apanake punaraya sarabaraha karate habe, 20 harana";
+        else if (index == WALLED_CITY)
+            return "Pracira ghera sanarera raja apanara biratbera prasansa karena, 180 uparjana karuna";
+        else if (index == MONASTERY)
+            return "Mathe apanara tirthayatra labha kare na";
+        else if (index == BLACK_CAVE)
+            return "Kalo guha pariskara karara jonno apanara anusandhana byayabahula pramanita, 70 harana";
+        else if (index == MOUNTAIN_HUTS)
+            return "Apani paharera lokadera sathe sikara karena ebam 60 sbarnamudrara jonno apanare khela bikri karena";
+        else if (index == WEREWALL)
+            return "oyara apanare yatra byaybahula pramanita, kintu eti raksakari na itara apanake ekati anusandhane pathaya, 80 harana";
+        else if (index == PIT)
+            return "Apanare ghora ekati garte tara pa bhenge, 50 harana";
+        else if (index == GOLDMINE)
+            return "Apanare kastera yatraya apani 650 sonara kayena uparjana karena!";
+        else if (index == NAME_TEXT)
+            return " loke apanake kona name smarana karabe ta cayana karuna ";
+        else if (index == SCORE_TEXT)
+            return ("Ekhana paryanta payenta: ");
+        else
+            return ("Truti: suci simara ba'ire");
+    };
+
+    static Language[] languages = new Language[] {english, romanian, bengali};
 
     public static String getLanguage(int language, int index) {
         return languages[language].LanguageOutput(index);
@@ -157,7 +188,7 @@ public class Languages {
     public static int selectLanguage() {
         
         try {
-            System.out.println(new String ("EN: English | RO: Română".getBytes("ISO-8859-16"), "ISO-8859-1"));
+            System.out.println(new String ("EN: English | RO: Română BE: Bengali".getBytes("ISO-8859-16"), "ISO-8859-1"));
         } catch (UnsupportedEncodingException e) {
             System.out.println("ERROR: Language select not properly encoded");
             e.printStackTrace();
@@ -173,6 +204,9 @@ public class Languages {
                 break;
             } else if (line.equalsIgnoreCase("RO") || line.equalsIgnoreCase("Română") || line.equalsIgnoreCase("Romanian") || line.equalsIgnoreCase("Romana")) {
                 language = 1;
+                break;
+            } else if (line.equalsIgnoreCase("BE") || line.equalsIgnoreCase("Bengali")) {
+                language = 2;
                 break;
             }
         }
