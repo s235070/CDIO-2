@@ -18,103 +18,33 @@ public class Languages {
     //To add new languages, make a new Language function and add it to the array languages, then expand Utils to include it
     static Language english = index -> {
         if (index == TOWER)
-            try {
-                return new String ("You plunder the tower and earn 250".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 2 not properly encoded";
-            }
+            return "Plundering the dangerous tower can earn you 250 gold coins";
         else if (index == CRATER)
-            try {
-                return new String ("You dig an empty crater in search of gold and lose 100".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 3 not properly encoded";
-            }
+            return "In pursuit of gold, you excavated a vast pit, only to watch 100 vanish, leaving you in utter despair"; 
         else if (index == PALACE)
-            try {
-                return new String ("You trade at the camp outside the palace gates and earn 100".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 4 not properly encoded";
-            }
+            return "You trade at the camp outside the palace gates and earn 100";
         else if (index == DESERT)
-            try {
-                return new String ("You have to resupply after journeying through the cold desert, lose 20".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 5 not properly encoded";
-            }
+            return"You have to resupply after journeying through the cold desert, lose 20";
         else if (index == WALLED_CITY)
-            try {
-                return new String ("The king of the walled city commends your chivalry, earn 180".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 6 not properly encoded";
-            }
+            return "The king of the walled city commends your chivalry, earn 180";
         else if (index == MONASTERY)
-            try {
-                return new String ("Your pilgrimage to the monastery does not yield a profit".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 7 not properly encoded";
-            }
+            return "Your pilgrimage to the monastery does not yield a profit";
         else if (index == BLACK_CAVE)
-            try {
-                return new String ("Your quest to cleanse the black cave proves costly, lose 70".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 8 not properly encoded";
-            }
+            return "Your quest to cleanse the black cave proves costly, lose 70";
         else if (index == MOUNTAIN_HUTS)
-            try {
-                return new String ("You hunt with the mountain folk and sell your game for 60".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 9 not properly encoded";
-            }
+            return "You hunt with the people of the mountains and sell your game for 60 gold coins";
         else if (index == WEREWALL)
-            try {
-                return new String ("Your journey to the Werewall proves costly, but the knights protecting it send you on a quest, lose 80.\nEXTRA TURN".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 10 not properly encoded";
-            }
+            return "Your journey to the Werewall proves costly, but the knights protecting it send you on a quest, lose 80";
         else if (index == PIT)
-            try {
-                return new String ("Your horse breaks its leg in a pit, lose 50".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 11 not properly encoded";
-            }
+            return "Your horse breaks its leg in a pit, lose 50";
         else if (index == GOLDMINE)
-            try {
-                return new String ("You find gold in the mountains and earn 650!".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 12 not properly encoded";
-            }
+            return "In your journey of hardship you earn 650 gold coins!";
         else if (index == NAME_TEXT)
-            try {
-                return new String (" choose a name".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 13 not properly encoded";
-            }
+            return "Choose which name people should remember you by ";
         else if (index == SCORE_TEXT)
-            try {
-                return new String ("Points thus far: ".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Index 14 not properly encoded";
-            }
+            return ("Points thus far: ");
         else
-            try {
-                return new String ("ERROR: Index out of range".getBytes("ISO-8859-16"), "ISO-8859-1");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-                return "ERROR: Default case not properly encoded";
-            }
+            return ("ERROR: Index out of range");
     };
 
     static Language romanian = index -> {
