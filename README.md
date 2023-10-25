@@ -1,5 +1,8 @@
 # CDIO-2
 
+Report:
+https://docs.google.com/document/d/1uVQZZ0XBGhQ9y3gBKsCwxTVtxXrUfxQiflAwLqcPXkc/edit?usp=sharing 
+
 Group work; roles & assignment.
 
 Daniall M. {
@@ -16,7 +19,7 @@ Andrei E. {
 
 Abdullah H. {
   Role ("Developer, Reporter & Reader"),
-  Code Assignment ("Script writer"),
+  Code Assignment ("Script writer" (add Urdu lang)),
   Report Assignment ("Introduction, Requirements/Analysis, Design & Conlusion");
 }
 
@@ -28,13 +31,13 @@ Samin C. {
 
 Mustafa A. {
   Role ("Developer & Reporter"),
-  Code Assignment ("Translation"),
+  Code Assignment ("Translation (add Arabic lang)"),
   Report Assignment (Report Desing),("Summary, Hourly accounting, Project planning & Appendix");
 }
 
 Daniel R. {
   Role ("Developer & Reporter"),
-  Code Assignment ("Translation"),
+  Code Assignment ("Translation (add Danish lang)"),
   Report Assignment (Report Desing),("Summary, Hourly accounting, Project planning & Appendix");
 }
 
