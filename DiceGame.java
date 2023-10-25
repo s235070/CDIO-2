@@ -29,6 +29,7 @@ public class DiceGame {
                 extra = false;
                 int diceRoll = Dice.rollDice();
                 //System.out.println("Diceroll: " + diceRoll); //Debug line
+                Graphics.showImage(diceRoll);
                 System.out.println(Languages.getLanguage(language, diceRoll));
                 if (diceRoll == WEREWALL)
                     extra = true;
@@ -47,6 +48,7 @@ public class DiceGame {
                 extra = false;
                 int diceRoll = Dice.rollDice();
                 //System.out.println("Diceroll: " + diceRoll); //Debug line
+                Graphics.showImage(diceRoll);
                 System.out.println(Languages.getLanguage(language, diceRoll));
                 if (diceRoll == WEREWALL)
                     extra = true;
