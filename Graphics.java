@@ -1,3 +1,5 @@
+// Andrei E. Createt this amazing idea to add design and coded this art!!
+
 public class Graphics {
     static int TOWER = 2;
     static int CRATER = 3;
