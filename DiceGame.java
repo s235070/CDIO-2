@@ -13,7 +13,7 @@ public class DiceGame {
     static int NAME_TEXT = 13;
     static int SCORE_TEXT = 14;
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         boolean extra = false;
         int language = Languages.selectLanguage();
 
@@ -22,42 +22,44 @@ public class DiceGame {
         Player p1 = new Player(scanner.nextLine());
         System.out.println("P2" + Languages.getLanguage(language, NAME_TEXT));
         Player p2 = new Player(scanner.nextLine());
-        
-        while(true) {
+
+        while (true) {
             System.out.println(p1.getName() + ": ");
             do {
                 extra = false;
                 int diceRoll = Dice.rollDice();
-                //System.out.println("Diceroll: " + diceRoll); //Debug line
+
+                Graphics.showImage(diceRoll);
                 System.out.println(Languages.getLanguage(language, diceRoll));
                 if (diceRoll == WEREWALL)
                     extra = true;
-                if(!p1.addCash(diceRoll)) {
+                if (!p1.addCash(diceRoll)) {
                     System.out.println(Languages.getLanguage(language, SCORE_TEXT) + p1.getCash());
                     p1.wins();
                     RecordKeeper.recordGame(p1, p2);
                     scanner.close();
                     return;
-                }         
-                System.out.println(Languages.getLanguage(language, SCORE_TEXT) + p1.getCash());   
+                }
+                System.out.println(Languages.getLanguage(language, SCORE_TEXT) + p1.getCash());
             } while (extra);
 
             System.out.println(p2.getName() + ": ");
             do {
                 extra = false;
                 int diceRoll = Dice.rollDice();
-                //System.out.println("Diceroll: " + diceRoll); //Debug line
+
+                Graphics.showImage(diceRoll);
                 System.out.println(Languages.getLanguage(language, diceRoll));
                 if (diceRoll == WEREWALL)
                     extra = true;
-                if(!p2.addCash(diceRoll)) {
+                if (!p2.addCash(diceRoll)) {
                     System.out.println(Languages.getLanguage(language, SCORE_TEXT) + p2.getCash());
                     p2.wins();
                     RecordKeeper.recordGame(p1, p2);
                     scanner.close();
                     return;
                 }
-                System.out.println(Languages.getLanguage(language, SCORE_TEXT) + p2.getCash());            
+                System.out.println(Languages.getLanguage(language, SCORE_TEXT) + p2.getCash());
             } while (extra);
         }
     }

@@ -15,7 +15,6 @@ public class Languages {
     static int NAME_TEXT = 13;
     static int SCORE_TEXT = 14;
 
-    //To add new languages, make a new Language function and add it to the array languages, then expand Utils to include it
     static Language english = index -> {
         if (index == TOWER)
             return "Plundering the dangerous tower can earn you 250 gold coins";
