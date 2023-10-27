@@ -13,7 +13,7 @@ echo    Roll the dice and see who wins!
 echo.
 
 echo.
-echo    ENTER A BIG CAPITAL,  
+echo    ENTER TWO BIG CAPITAL,  
 echo.
 echo    AS YOU CAN SEE LISTED,
 echo.
