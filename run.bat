@@ -1,31 +1,48 @@
 @echo off
 cls
 color 0c
-title DiceGame CDIO part 2
+title Gold Rush, CDIO part 2
 
-
+:start
+echo.
+echo    IOOuterActive 
 echo.
 echo    Welcome to the Dice Game
-echo.   ************************
-echo    Velkommen til terningespillet
-echo.   ************************
-echo    Bun venit la jocul de zaruri
-echo.   ************************
-echo    Ḍā'isa gēmē sbāgatama
-echo.   ************************
 echo.
 echo    Roll the dice and see who wins!
-echo.   ************************
-echo    Kast terningerne og se, hvem der vinder!
-echo.   ************************
-echo    Dă cu zarurile și vezi cine câștigă
-echo.   ************************
-echo    Pāśā rōla ēbaṁ dēkhuna kē jitē!
-echo.   ************************
 echo.
 
-pause
+echo.
+echo    ENTER IN BIG CAPITAL,  
+echo.
+echo    AS YOU CAN SEE LISTED,
+echo. 
+echo    WHICH LANGUAGE YOU WANT!
+echo.
+echo.
+echo.
+echo.
 
 javac -cp . *.java
 java DiceGame
-pause
+
+:menu
+echo.
+echo    Game over! What would you like to do?
+echo    1. Restart the game
+echo    2. Exit
+
+set /p choice=Enter the number of your choice: 
+
+if "%choice%"== "1" (
+    echo Restarting the game...
+    goto start
+)
+
+if "%choice%"== "2" (
+    echo Exiting the game...
+    exit /b 0
+)
+
+echo Invalid choice, please try again...
+goto menu
