@@ -30,6 +30,7 @@ echo.
 echo    Game over! What would you like to do?
 echo    1. Restart the game
 echo    2. Exit
+echo.
 
 set /p choice=Enter the number of your choice: 
 
