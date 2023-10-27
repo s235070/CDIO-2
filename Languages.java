@@ -238,7 +238,7 @@ public class Languages {
                 language = 2;
                 break;
             } else if (line.equalsIgnoreCase("DA") || line.equalsIgnoreCase("Danish") || line.equalsIgnoreCase("Danish") || line.equalsIgnoreCase("DK")) {
-                language = 3
+                language = 3;
                 break;
             }
         }
