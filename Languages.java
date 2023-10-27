@@ -178,7 +178,37 @@ public class Languages {
             return ("Truti: suci simara ba'ire");
     };
 
-    static Language[] languages = new Language[] {english, romanian, bengali};
+    static Language danish = index -> {
+        if (index == TOWER)
+            return "Ved at plyndre det farlige tårn kan du tjene 250 guld mønter";
+        else if (index == CRATER)
+            return "I jagten efter guld, udgravede du et stort krater, kun for at se 100 mønter forsvinde, du er tabt i fuldstændig fortvivelse";
+        else if (index == PALACE)
+            return "Du bytter i lejren udenfor paladsets porte og tjener 100 mønter";
+        else if (index == DESERT)
+            return "Du har brug for at genforsyne efter rejsen igennem den kolde ørkenen ";
+        else if (index == WALLED_CITY)
+            return "Kongen af den befæstede by roser dig for din ridderlighed, du tjener 100 mønter";
+        else if (index == MONASTERY)
+            return "Din pilgrimsrejse til klosteret giver dig ikke en profit";
+        else if (index == BLACK_CAVE)
+            return "Din søgen for rensningen af den sorte grotte beviser sig at være dyr, du mister 70 mønter";
+        else if (index == MOUNTAIN_HUTS)
+            return "Du jæger med folket fra bjergene og sælger dit spil for 60 guld mønter";
+        else if (index == WEREWALL)
+            return "Din rejse til varmur viser sig at være dyr, men ridderne der beskytter det sender dig på en mission, du mister 80 mønter";
+        else if (index == PIT)
+            return "Din hest brækker sine ben i et hul, du mister 80 mønter";
+        else if (index == GOLDMINE)
+            return "Efter din hårde rejse ankommer du til guldminen og tjener 650 guld mønter!";
+        else if (index == NAME_TEXT)
+            return "Vælg det navn du vil have folket skal huske dig ved";
+        else if (index == SCORE_TEXT)
+            return ("Point indtil videre: ");
+        else
+            return ("FEJL: Indeks uden for rækkevidde");
+    };
+    static Language[] languages = new Language[] {english, romanian, bengali, danish};
 
     public static String getLanguage(int language, int index) {
         return languages[language].LanguageOutput(index);
@@ -187,7 +217,7 @@ public class Languages {
     public static int selectLanguage() {
         
         try {
-            System.out.println(new String ("EN: English | RO: Română | BE: Bangla".getBytes("ISO-8859-16"), "ISO-8859-1"));
+            System.out.println(new String ("EN: English | RO: Română | BA: Bangla | DA: Danish".getBytes("ISO-8859-16"), "ISO-8859-1"));
         } catch (UnsupportedEncodingException e) {
             System.out.println("ERROR: Language select not properly encoded");
             e.printStackTrace();
@@ -204,8 +234,11 @@ public class Languages {
             } else if (line.equalsIgnoreCase("RO") || line.equalsIgnoreCase("Română") || line.equalsIgnoreCase("Romanian") || line.equalsIgnoreCase("Romana")) {
                 language = 1;
                 break;
-            } else if (line.equalsIgnoreCase("BE") || line.equalsIgnoreCase("Bengali") || line.equalsIgnoreCase("Bangla") || line.equalsIgnoreCase("BA") || line.equalsIgnoreCase("BD") || line.equalsIgnoreCase("BN")) {
+            } else if (line.equalsIgnoreCase("BA") || line.equalsIgnoreCase("Bengali") || line.equalsIgnoreCase("Bangla") || line.equalsIgnoreCase("BE") || line.equalsIgnoreCase("BD") || line.equalsIgnoreCase("BN")) {
                 language = 2;
+                break;
+            } else if (line.equalsIgnoreCase("DA") || line.equalsIgnoreCase("Danish") || line.equalsIgnoreCase("Danish") || line.equalsIgnoreCase("DK")) {
+                language = 3
                 break;
             }
         }
