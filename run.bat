@@ -13,14 +13,13 @@ echo    Roll the dice and see who wins!
 echo.
 
 echo.
-echo    ENTER IN BIG CAPITAL,  
+echo    ENTER A BIG CAPITAL,  
 echo.
 echo    AS YOU CAN SEE LISTED,
+echo.
+echo    DOWN HER, AND CHOOSE 
 echo. 
 echo    WHICH LANGUAGE YOU WANT!
-echo.
-echo.
-echo.
 echo.
 
 javac -cp . *.java
