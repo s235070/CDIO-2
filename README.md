@@ -19,7 +19,7 @@ Andrei E. {
 
 Abdullah H. {
   Role ("Developer, Reporter & Reader"),
-  Code Assignment ("Script writer" (add Urdu lang)),
+  Code Assignment ("Script writer"),
   Report Assignment ("Introduction, Requirements/Analysis, Design & Conlusion");
 }
 
@@ -31,13 +31,13 @@ Samin C. {
 
 Mustafa A. {
   Role ("Developer & Reporter"),
-  Code Assignment ("Translation (add Arabic lang)"),
+  Code Assignment ("Translation"),
   Report Assignment (Report Desing),("Summary, Hourly accounting, Project planning & Appendix");
 }
 
 Daniel R. {
   Role ("Developer & Reporter"),
-  Code Assignment ("Translation (add Danish lang)"),
+  Code Assignment ("Translation"),
   Report Assignment (Report Desing),("Summary, Hourly accounting, Project planning & Appendix");
 }
 
